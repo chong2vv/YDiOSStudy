@@ -9,4 +9,8 @@
 
 @implementation Boy
 
+- (void)sayHi {
+    NSLog(@"hi there again!\n");
+}
+
 @end

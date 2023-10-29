@@ -18,6 +18,12 @@
 		15911DBE2AD7DBC500E58958 /* YDiOSStudyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15911DBD2AD7DBC500E58958 /* YDiOSStudyUITests.m */; };
 		15911DC02AD7DBC500E58958 /* YDiOSStudyUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 15911DBF2AD7DBC500E58958 /* YDiOSStudyUITestsLaunchTests.m */; };
 		15911DD02AD7DC7C00E58958 /* Boy.m in Sources */ = {isa = PBXBuildFile; fileRef = 15911DCF2AD7DC7C00E58958 /* Boy.m */; };
+		15911DD42AD7F95B00E58958 /* StudyObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 15911DD32AD7F95B00E58958 /* StudyObjC.m */; };
+		15911DD62AD7FBE700E58958 /* BoySay.sh in Resources */ = {isa = PBXBuildFile; fileRef = 15911DD52AD7FBE700E58958 /* BoySay.sh */; };
+		15911DD92AD8D8C900E58958 /* SayHi.m in Sources */ = {isa = PBXBuildFile; fileRef = 15911DD82AD8D8C900E58958 /* SayHi.m */; };
+		15B875C62AEA51CD00F3476B /* DyldBuild.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B875C52AEA51CD00F3476B /* DyldBuild.m */; };
+		15B875CA2AEA5CC800F3476B /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 15B875C92AEA5CC800F3476B /* test.mp3 */; };
+		39991E7D2D56225B9C9AC6F4 /* libPods-YDiOSStudy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3535677855293CB679A2010 /* libPods-YDiOSStudy.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +63,17 @@
 		15911DBF2AD7DBC500E58958 /* YDiOSStudyUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDiOSStudyUITestsLaunchTests.m; sourceTree = "<group>"; };
 		15911DCE2AD7DC7C00E58958 /* Boy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Boy.h; sourceTree = "<group>"; };
 		15911DCF2AD7DC7C00E58958 /* Boy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Boy.m; sourceTree = "<group>"; };
+		15911DD22AD7F95B00E58958 /* StudyObjC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudyObjC.h; sourceTree = "<group>"; };
+		15911DD32AD7F95B00E58958 /* StudyObjC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudyObjC.m; sourceTree = "<group>"; };
+		15911DD52AD7FBE700E58958 /* BoySay.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = BoySay.sh; path = YDiOSStudy/BoySay.sh; sourceTree = SOURCE_ROOT; };
+		15911DD72AD8D8C900E58958 /* SayHi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SayHi.h; sourceTree = "<group>"; };
+		15911DD82AD8D8C900E58958 /* SayHi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SayHi.m; sourceTree = "<group>"; };
+		15B875C42AEA51CD00F3476B /* DyldBuild.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DyldBuild.h; sourceTree = "<group>"; };
+		15B875C52AEA51CD00F3476B /* DyldBuild.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DyldBuild.m; sourceTree = "<group>"; };
+		15B875C92AEA5CC800F3476B /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
+		1B3C530522259B64AD5E1478 /* Pods-YDiOSStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDiOSStudy.debug.xcconfig"; path = "Target Support Files/Pods-YDiOSStudy/Pods-YDiOSStudy.debug.xcconfig"; sourceTree = "<group>"; };
+		B3FDA998E2904D1F521C3A55 /* Pods-YDiOSStudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDiOSStudy.release.xcconfig"; path = "Target Support Files/Pods-YDiOSStudy/Pods-YDiOSStudy.release.xcconfig"; sourceTree = "<group>"; };
+		F3535677855293CB679A2010 /* libPods-YDiOSStudy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YDiOSStudy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39991E7D2D56225B9C9AC6F4 /* libPods-YDiOSStudy.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +102,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14FF6D0F399C070EE67268BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B3C530522259B64AD5E1478 /* Pods-YDiOSStudy.debug.xcconfig */,
+				B3FDA998E2904D1F521C3A55 /* Pods-YDiOSStudy.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		15911D8B2AD7DBC400E58958 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +118,8 @@
 				15911DB22AD7DBC500E58958 /* YDiOSStudyTests */,
 				15911DBC2AD7DBC500E58958 /* YDiOSStudyUITests */,
 				15911D952AD7DBC400E58958 /* Products */,
+				14FF6D0F399C070EE67268BE /* Pods */,
+				CB0DA1C2FA20F990FDFDCCA9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,7 +136,9 @@
 		15911D962AD7DBC400E58958 /* YDiOSStudy */ = {
 			isa = PBXGroup;
 			children = (
-				15911DCC2AD7DBF600E58958 /* YDStudy */,
+				15B875C92AEA5CC800F3476B /* test.mp3 */,
+				15911DD12AD7EB1F00E58958 /* YDStudySwift */,
+				15911DCC2AD7DBF600E58958 /* YDStudyObjC */,
 				15911D972AD7DBC400E58958 /* AppDelegate.h */,
 				15911D982AD7DBC400E58958 /* AppDelegate.m */,
 				15911D9A2AD7DBC400E58958 /* SceneDelegate.h */,
@@ -140,21 +171,43 @@
 			path = YDiOSStudyUITests;
 			sourceTree = "<group>";
 		};
-		15911DCC2AD7DBF600E58958 /* YDStudy */ = {
+		15911DCC2AD7DBF600E58958 /* YDStudyObjC */ = {
 			isa = PBXGroup;
 			children = (
 				15911DCD2AD7DC6000E58958 /* 链接器绑定地址 */,
+				15911DD22AD7F95B00E58958 /* StudyObjC.h */,
+				15911DD32AD7F95B00E58958 /* StudyObjC.m */,
 			);
-			path = YDStudy;
+			path = YDStudyObjC;
 			sourceTree = "<group>";
 		};
 		15911DCD2AD7DC6000E58958 /* 链接器绑定地址 */ = {
 			isa = PBXGroup;
 			children = (
+				15911DD52AD7FBE700E58958 /* BoySay.sh */,
 				15911DCE2AD7DC7C00E58958 /* Boy.h */,
 				15911DCF2AD7DC7C00E58958 /* Boy.m */,
+				15911DD72AD8D8C900E58958 /* SayHi.h */,
+				15911DD82AD8D8C900E58958 /* SayHi.m */,
+				15B875C42AEA51CD00F3476B /* DyldBuild.h */,
+				15B875C52AEA51CD00F3476B /* DyldBuild.m */,
 			);
 			path = "链接器绑定地址";
+			sourceTree = "<group>";
+		};
+		15911DD12AD7EB1F00E58958 /* YDStudySwift */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = YDStudySwift;
+			sourceTree = "<group>";
+		};
+		CB0DA1C2FA20F990FDFDCCA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3535677855293CB679A2010 /* libPods-YDiOSStudy.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,9 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15911DC32AD7DBC500E58958 /* Build configuration list for PBXNativeTarget "YDiOSStudy" */;
 			buildPhases = (
+				8053CBB4F05C197F2097354D /* [CP] Check Pods Manifest.lock */,
 				15911D902AD7DBC400E58958 /* Sources */,
 				15911D912AD7DBC400E58958 /* Frameworks */,
 				15911D922AD7DBC400E58958 /* Resources */,
+				ABC5B40B6A5E1A41DCBF1F68 /* [CP] Embed Pods Frameworks */,
+				58C14B1A0E8A5A17D6B7F640 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,6 +317,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				15911DA72AD7DBC500E58958 /* LaunchScreen.storyboard in Resources */,
+				15B875CA2AEA5CC800F3476B /* test.mp3 in Resources */,
+				15911DD62AD7FBE700E58958 /* BoySay.sh in Resources */,
 				15911DA42AD7DBC500E58958 /* Assets.xcassets in Resources */,
 				15911DA22AD7DBC400E58958 /* Main.storyboard in Resources */,
 			);
@@ -282,6 +340,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		58C14B1A0E8A5A17D6B7F640 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YDiOSStudy/Pods-YDiOSStudy-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YDiOSStudy/Pods-YDiOSStudy-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YDiOSStudy/Pods-YDiOSStudy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8053CBB4F05C197F2097354D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YDiOSStudy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABC5B40B6A5E1A41DCBF1F68 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YDiOSStudy/Pods-YDiOSStudy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YDiOSStudy/Pods-YDiOSStudy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YDiOSStudy/Pods-YDiOSStudy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		15911D902AD7DBC400E58958 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -290,6 +407,9 @@
 				15911D9F2AD7DBC400E58958 /* ViewController.m in Sources */,
 				15911D992AD7DBC400E58958 /* AppDelegate.m in Sources */,
 				15911DD02AD7DC7C00E58958 /* Boy.m in Sources */,
+				15B875C62AEA51CD00F3476B /* DyldBuild.m in Sources */,
+				15911DD92AD8D8C900E58958 /* SayHi.m in Sources */,
+				15911DD42AD7F95B00E58958 /* StudyObjC.m in Sources */,
 				15911DAA2AD7DBC500E58958 /* main.m in Sources */,
 				15911D9C2AD7DBC400E58958 /* SceneDelegate.m in Sources */,
 			);
@@ -399,7 +519,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -454,7 +574,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -465,12 +585,14 @@
 		};
 		15911DC42AD7DBC500E58958 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B3C530522259B64AD5E1478 /* Pods-YDiOSStudy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C3V5PUXTCL;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YDiOSStudy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -478,6 +600,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -492,12 +615,14 @@
 		};
 		15911DC52AD7DBC500E58958 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3FDA998E2904D1F521C3A55 /* Pods-YDiOSStudy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C3V5PUXTCL;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = YDiOSStudy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -505,6 +630,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

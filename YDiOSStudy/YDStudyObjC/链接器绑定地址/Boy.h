@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Boy : NSObject
 
+- (void)sayHi;
+
 @end
 
 NS_ASSUME_NONNULL_END
