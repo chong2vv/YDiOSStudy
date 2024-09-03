@@ -8,6 +8,7 @@ def sharePods
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
   
+  pod 'SnapKit'
   #腾讯bugly
   pod 'Bugly', '2.5.0'
   pod 'Masonry'

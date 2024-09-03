@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		150B811E2C7F350B00844841 /* NumberIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150B811D2C7F350B00844841 /* NumberIterator.swift */; };
+		150B81982C85AF4600844841 /* SwiftFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150B81972C85AF4600844841 /* SwiftFunction.swift */; };
+		150B819C2C85B1D600844841 /* SwiftListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150B819B2C85B1D600844841 /* SwiftListViewController.swift */; };
+		150B819E2C85B2E000844841 /* UITableViewCell+YD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150B819D2C85B2E000844841 /* UITableViewCell+YD.swift */; };
+		150B81A12C85B36600844841 /* NSObject+YD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150B81A02C85B36600844841 /* NSObject+YD.swift */; };
+		150B81A32C85B67A00844841 /* SwiftErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150B81A22C85B67A00844841 /* SwiftErrorViewController.swift */; };
+		150B81A52C85B87100844841 /* SwiftBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150B81A42C85B87100844841 /* SwiftBaseViewController.swift */; };
+		150B81A72C85D55000844841 /* GrammarBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150B81A62C85D55000844841 /* GrammarBasics.swift */; };
+		150B81A92C86F80400844841 /* BaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150B81A82C86F80400844841 /* BaseType.swift */; };
 		15911D992AD7DBC400E58958 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15911D982AD7DBC400E58958 /* AppDelegate.m */; };
 		15911D9C2AD7DBC400E58958 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15911D9B2AD7DBC400E58958 /* SceneDelegate.m */; };
 		15911D9F2AD7DBC400E58958 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15911D9E2AD7DBC400E58958 /* ViewController.m */; };
@@ -44,6 +53,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		150B811C2C7F350A00844841 /* YDiOSStudy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YDiOSStudy-Bridging-Header.h"; sourceTree = "<group>"; };
+		150B811D2C7F350B00844841 /* NumberIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberIterator.swift; sourceTree = "<group>"; };
+		150B81972C85AF4600844841 /* SwiftFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFunction.swift; sourceTree = "<group>"; };
+		150B819B2C85B1D600844841 /* SwiftListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftListViewController.swift; sourceTree = "<group>"; };
+		150B819D2C85B2E000844841 /* UITableViewCell+YD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+YD.swift"; sourceTree = "<group>"; };
+		150B81A02C85B36600844841 /* NSObject+YD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+YD.swift"; sourceTree = "<group>"; };
+		150B81A22C85B67A00844841 /* SwiftErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftErrorViewController.swift; sourceTree = "<group>"; };
+		150B81A42C85B87100844841 /* SwiftBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBaseViewController.swift; sourceTree = "<group>"; };
+		150B81A62C85D55000844841 /* GrammarBasics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarBasics.swift; sourceTree = "<group>"; };
+		150B81A82C86F80400844841 /* BaseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseType.swift; sourceTree = "<group>"; };
 		15911D942AD7DBC400E58958 /* YDiOSStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YDiOSStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15911D972AD7DBC400E58958 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		15911D982AD7DBC400E58958 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -109,6 +128,34 @@
 				B3FDA998E2904D1F521C3A55 /* Pods-YDiOSStudy.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		150B81992C85B18A00844841 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				150B81A42C85B87100844841 /* SwiftBaseViewController.swift */,
+				150B819B2C85B1D600844841 /* SwiftListViewController.swift */,
+				150B819D2C85B2E000844841 /* UITableViewCell+YD.swift */,
+				150B81A22C85B67A00844841 /* SwiftErrorViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		150B819A2C85B19800844841 /* Study */ = {
+			isa = PBXGroup;
+			children = (
+				150B81A62C85D55000844841 /* GrammarBasics.swift */,
+				150B81A82C86F80400844841 /* BaseType.swift */,
+			);
+			path = Study;
+			sourceTree = "<group>";
+		};
+		150B819F2C85B35600844841 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				150B81A02C85B36600844841 /* NSObject+YD.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		15911D8B2AD7DBC400E58958 = {
@@ -198,6 +245,12 @@
 		15911DD12AD7EB1F00E58958 /* YDStudySwift */ = {
 			isa = PBXGroup;
 			children = (
+				150B819F2C85B35600844841 /* Tools */,
+				150B819A2C85B19800844841 /* Study */,
+				150B81992C85B18A00844841 /* UI */,
+				150B81972C85AF4600844841 /* SwiftFunction.swift */,
+				150B811D2C7F350B00844841 /* NumberIterator.swift */,
+				150B811C2C7F350A00844841 /* YDiOSStudy-Bridging-Header.h */,
 			);
 			path = YDStudySwift;
 			sourceTree = "<group>";
@@ -280,6 +333,7 @@
 				TargetAttributes = {
 					15911D932AD7DBC400E58958 = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1540;
 					};
 					15911DAE2AD7DBC500E58958 = {
 						CreatedOnToolsVersion = 15.0;
@@ -404,14 +458,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				150B81A12C85B36600844841 /* NSObject+YD.swift in Sources */,
+				150B819C2C85B1D600844841 /* SwiftListViewController.swift in Sources */,
 				15911D9F2AD7DBC400E58958 /* ViewController.m in Sources */,
 				15911D992AD7DBC400E58958 /* AppDelegate.m in Sources */,
+				150B81A72C85D55000844841 /* GrammarBasics.swift in Sources */,
+				150B81A92C86F80400844841 /* BaseType.swift in Sources */,
 				15911DD02AD7DC7C00E58958 /* Boy.m in Sources */,
 				15B875C62AEA51CD00F3476B /* DyldBuild.m in Sources */,
 				15911DD92AD8D8C900E58958 /* SayHi.m in Sources */,
+				150B819E2C85B2E000844841 /* UITableViewCell+YD.swift in Sources */,
+				150B81982C85AF4600844841 /* SwiftFunction.swift in Sources */,
 				15911DD42AD7F95B00E58958 /* StudyObjC.m in Sources */,
+				150B81A32C85B67A00844841 /* SwiftErrorViewController.swift in Sources */,
+				150B811E2C7F350B00844841 /* NumberIterator.swift in Sources */,
 				15911DAA2AD7DBC500E58958 /* main.m in Sources */,
 				15911D9C2AD7DBC400E58958 /* SceneDelegate.m in Sources */,
+				150B81A52C85B87100844841 /* SwiftBaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,6 +652,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C3V5PUXTCL;
@@ -609,6 +673,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wyd.YDiOSStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "YDiOSStudy/YDStudySwift/YDiOSStudy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -619,6 +686,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C3V5PUXTCL;
@@ -639,6 +707,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wyd.YDiOSStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "YDiOSStudy/YDStudySwift/YDiOSStudy-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -646,6 +716,7 @@
 		15911DC72AD7DBC500E58958 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -664,6 +735,7 @@
 		15911DC82AD7DBC500E58958 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -682,6 +754,7 @@
 		15911DCA2AD7DBC500E58958 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C3V5PUXTCL;
@@ -698,6 +771,7 @@
 		15911DCB2AD7DBC500E58958 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = C3V5PUXTCL;

@@ -7,6 +7,8 @@
 
 #import "ViewController.h"
 #import "DyldBuild.h"
+#import "YDiOSStudy-Swift.h"
+#import "YDSVProgressHUD/YDProgressHUD.h"
 
 @interface ViewController ()
 
@@ -17,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    self.title = @"iOS 小册子";
     
 }
 
@@ -28,6 +30,6 @@
 }
 
 - (IBAction)onClickSwift:(id)sender {
-    
+    [self.navigationController pushViewController:[[SwiftListViewController alloc] init] animated:YES];
 }
 @end
