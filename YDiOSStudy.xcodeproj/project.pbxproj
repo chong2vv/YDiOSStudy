@@ -16,6 +16,7 @@
 		150B81A52C85B87100844841 /* SwiftBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150B81A42C85B87100844841 /* SwiftBaseViewController.swift */; };
 		150B81A72C85D55000844841 /* GrammarBasics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150B81A62C85D55000844841 /* GrammarBasics.swift */; };
 		150B81A92C86F80400844841 /* BaseType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150B81A82C86F80400844841 /* BaseType.swift */; };
+		150B81AE2C88060B00844841 /* UnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150B81AD2C88060B00844841 /* UnitTest.swift */; };
 		15911D992AD7DBC400E58958 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15911D982AD7DBC400E58958 /* AppDelegate.m */; };
 		15911D9C2AD7DBC400E58958 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15911D9B2AD7DBC400E58958 /* SceneDelegate.m */; };
 		15911D9F2AD7DBC400E58958 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15911D9E2AD7DBC400E58958 /* ViewController.m */; };
@@ -63,6 +64,7 @@
 		150B81A42C85B87100844841 /* SwiftBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBaseViewController.swift; sourceTree = "<group>"; };
 		150B81A62C85D55000844841 /* GrammarBasics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarBasics.swift; sourceTree = "<group>"; };
 		150B81A82C86F80400844841 /* BaseType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseType.swift; sourceTree = "<group>"; };
+		150B81AD2C88060B00844841 /* UnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTest.swift; sourceTree = "<group>"; };
 		15911D942AD7DBC400E58958 /* YDiOSStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YDiOSStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15911D972AD7DBC400E58958 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		15911D982AD7DBC400E58958 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 			children = (
 				150B81A62C85D55000844841 /* GrammarBasics.swift */,
 				150B81A82C86F80400844841 /* BaseType.swift */,
+				150B81AD2C88060B00844841 /* UnitTest.swift */,
 			);
 			path = Study;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				150B81A32C85B67A00844841 /* SwiftErrorViewController.swift in Sources */,
 				150B811E2C7F350B00844841 /* NumberIterator.swift in Sources */,
 				15911DAA2AD7DBC500E58958 /* main.m in Sources */,
+				150B81AE2C88060B00844841 /* UnitTest.swift in Sources */,
 				15911D9C2AD7DBC400E58958 /* SceneDelegate.m in Sources */,
 				150B81A52C85B87100844841 /* SwiftBaseViewController.swift in Sources */,
 			);

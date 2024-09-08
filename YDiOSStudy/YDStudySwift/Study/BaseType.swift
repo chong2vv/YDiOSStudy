@@ -7,9 +7,12 @@
 
 import Foundation
 
+/**
+ 基础类型
+ */
 extension SwiftBaseViewController {
     func loadBaseTypeData() {
-        data = ["数字", "布尔数", "字符串", "", "", "", "", "", "", ""]
+        data = ["数字", "布尔数", "字符串", "枚举", "", "", "", "", "", ""]
     }
     
     func didClickBaseType(type: String) {
@@ -17,6 +20,12 @@ extension SwiftBaseViewController {
         switch type {
         case "数字":
             objc.f1()
+        case "布尔数":
+            objc.f2()
+        case "字符串":
+            objc.f3()
+        case "枚举":
+            objc.f4()
         default:
             print("error")
         }
@@ -67,4 +76,82 @@ class BaseType {
          */
     }
     
+    // MARK: 布尔数
+    func f2() {
+        
+    }
+    
+    // MARK: 字符串
+    func f3() {
+        
+    }
+    
+    // MARK: 枚举
+    func f4() {
+        /**
+         Swift的枚举有类的一些特性，比如计算属性、实例方法、扩展、遵循协议等等。
+         */
+        
+        /**
+         在Swift中，CaseIterable 是一个协议，它允许枚举类型（enum）的每个案例（case）可以被迭代。这个协议特别有用，尤其是在处理需要枚举所有可能值的情况，比如UI选项或者状态机的状态等。当你实现CaseIterable协议后，你可以直接遍历枚举的所有成员，而不需要显式地列出所有的案例。
+
+         要使用CaseIterable，你的枚举类型必须遵守这个协议，并且提供一个返回枚举所有成员的数组的方法。通常，这个方法被称为allCases，但实际上你可以选择任何你喜欢的名字。
+         */
+        enum E1:String, CaseIterable {
+            case e1, e2 = "12"
+        }
+
+        // 关联值
+        enum E2 {
+            case e1([String])
+            case e2(Int)
+        }
+        let e1 = E2.e1(["one","two"])
+        let e2 = E2.e2(3)
+
+        switch e1 {
+        case .e1(let array):
+            print(array)
+        case .e2(let int):
+            print(int)
+        }
+        print(e2)
+
+        // 原始值
+        print(E1.e1.rawValue)
+
+        // 遵循 CaseIterable 协议可迭代
+        for ie in E1.allCases {
+            print("show \(ie)")
+        }
+
+        // 递归枚举
+        enum RE {
+            case v(String)
+            indirect case node(l:RE, r:RE)
+        }
+
+        let lNode = RE.v("left")
+        let rNode = RE.v("right")
+        let pNode = RE.node(l: lNode, r: rNode)
+
+        switch pNode {
+        case .v(let string):
+            print(string)
+        case .node(let l, let r):
+            print(l,r)
+            switch l {
+            case .v(let string):
+                print(string)
+            case .node(let l, let r):
+                print(l, r)
+            }
+            switch r {
+            case .v(let string):
+                print(string)
+            case .node(let l, let r):
+                print(l, r)
+            }
+        }
+    }
 }

@@ -29,8 +29,9 @@ class SwiftListViewController: UIViewController,UITableViewDelegate,UITableViewD
     
     override func viewDidLoad() {
         groupData = [
-            "Swift语法":["语法基础", "基础类型", "类和结构体", "函数式", "控制流", "集合", "操作符", "杂七杂八"],
-            "基础库":["语法基础", "基础类型", "类和结构体"],
+            "Swift语法": ["语法基础", "基础类型", "类和结构体", "函数式", "控制流", "集合", "操作符", "杂七杂八"],
+            "基础库": ["语法基础", "基础类型", "类和结构体"],
+            "片段测试": ["片段测试"]
         ]
         view.backgroundColor = .white
         view.addSubview(tableView)
@@ -77,6 +78,10 @@ class SwiftListViewController: UIViewController,UITableViewDelegate,UITableViewD
         switch key {
         case "Swift语法":
             vc = clickSwiftBaseModule(title: title)
+        case "片段测试":
+            let objc = UnitTest()
+            objc.testAction()
+            return
         default:
             print("error")
             showErrorText("未查到此内容，待更新")
