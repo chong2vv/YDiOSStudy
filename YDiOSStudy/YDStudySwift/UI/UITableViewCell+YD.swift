@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+@objc
 extension UITableViewCell {
     /// 从nib加载cell
     /// - Parameter tableView: UITableView

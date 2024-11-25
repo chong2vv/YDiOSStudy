@@ -9,6 +9,7 @@
 #import "DyldBuild.h"
 #import "YDiOSStudy-Swift.h"
 #import "YDSVProgressHUD/YDProgressHUD.h"
+#import "YDOCListViewController.h"
 
 @interface ViewController ()
 
@@ -24,9 +25,10 @@
 }
 
 - (IBAction)onClickObjC:(id)sender {
-    DyldBuild *dyldBuild = [[DyldBuild alloc] init];
+//    DyldBuild *dyldBuild = [[DyldBuild alloc] init];
 //    [dyldBuild build];
-    [dyldBuild systemBuild];
+//    [dyldBuild systemBuild];
+    [self.navigationController pushViewController:[[YDOCListViewController alloc] init] animated:YES];
 }
 
 - (IBAction)onClickSwift:(id)sender {
