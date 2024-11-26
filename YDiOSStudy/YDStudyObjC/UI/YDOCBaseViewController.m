@@ -1,40 +1,42 @@
 //
-//  YDOCListViewController.m
+//  YDOCBaseViewController.m
 //  YDiOSStudy
 //
 //  Created by 王远东 on 2024/11/26.
 //
 
-#import "YDOCListViewController.h"
+#import "YDOCBaseViewController.h"
 #import "YDiOSStudy-Swift.h"
 #import "Masonry.h"
-#import "YDOCBaseViewController.h"
+#import "YDOCBaseViewController+YDOCRuntime.h"
 
-@interface YDOCListViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface YDOCBaseViewController ()<UITableViewDelegate, UITableViewDataSource>
 
-@property (nonatomic, strong)UITableView *homeTableView;
-
-@property (nonatomic, copy) NSArray *data;
+@property (nonatomic, strong) UITableView *homeTableView;
+@property (nonatomic, copy) NSString *type;
 
 @end
 
-@implementation YDOCListViewController
+@implementation YDOCBaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [self configData];
     [self configUI];
-    
+}
+
++ (YDOCBaseViewController *) creatVC:(NSString *) type {
+    YDOCBaseViewController *vc = [[YDOCBaseViewController alloc] init];
+    vc.type = type;
+    return vc;
 }
 
 - (void)configData {
-    
-    self.data = @[
-        @"OC特性相关",
-        @"Runtime相关",
-        @"内存管理相关"
-    ];
+    if ([self.type isEqual:@"OC特性相关"]) {
+        
+    }else if ([self.type isEqual:@"Runtime相关"]) {
+        [self loadRuntimeData];
+    }
 }
 
 - (void)configUI {
@@ -56,22 +58,19 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [UITableViewCell ydCellWithTableView:self.homeTableView identifier:@"YDOCTableView"];
+    UITableViewCell *cell = [UITableViewCell ydCellWithTableView:self.homeTableView identifier:@"YDOCBaseTableView"];
     NSString *title = self.data[indexPath.row];
     cell.textLabel.text = title;
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *key = self.data[indexPath.row];
-    YDOCBaseViewController *vc;
-    if ([key isEqual:@"OC特性相关"]) {
+    NSString *title = self.data[indexPath.row];
+    if ([self.type isEqual:@"OC特性相关"]) {
         
-    }else if([key isEqual:@"Runtime相关"]) {
-        vc = [YDOCBaseViewController creatVC:key];
+    }else if ([self.type isEqual:@"Runtime相关"]) {
+        [self didRuntimeTypeClick:title];
     }
-    
-    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (UITableView *)homeTableView {
@@ -82,5 +81,6 @@
     }
     return _homeTableView;
 }
+
 
 @end
