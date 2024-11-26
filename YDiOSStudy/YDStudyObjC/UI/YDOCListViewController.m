@@ -65,11 +65,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *key = self.data[indexPath.row];
     YDOCBaseViewController *vc;
-    if ([key isEqual:@"OC特性相关"]) {
-        
-    }else if([key isEqual:@"Runtime相关"]) {
-        vc = [YDOCBaseViewController creatVC:key];
-    }
+    vc = [YDOCBaseViewController creatVC:key];
     
     [self.navigationController pushViewController:vc animated:YES];
 }

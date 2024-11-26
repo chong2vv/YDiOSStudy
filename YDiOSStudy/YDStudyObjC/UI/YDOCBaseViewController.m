@@ -9,6 +9,7 @@
 #import "YDiOSStudy-Swift.h"
 #import "Masonry.h"
 #import "YDOCBaseViewController+YDOCRuntime.h"
+#import "YDOCBaseViewController+YDOCBase.h"
 
 @interface YDOCBaseViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -33,7 +34,7 @@
 
 - (void)configData {
     if ([self.type isEqual:@"OC特性相关"]) {
-        
+        [self loadOCBaseData];
     }else if ([self.type isEqual:@"Runtime相关"]) {
         [self loadRuntimeData];
     }
@@ -67,7 +68,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *title = self.data[indexPath.row];
     if ([self.type isEqual:@"OC特性相关"]) {
-        
+        [self didOCBaseTypeClick:title];
     }else if ([self.type isEqual:@"Runtime相关"]) {
         [self didRuntimeTypeClick:title];
     }
