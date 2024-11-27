@@ -6,6 +6,7 @@
 //
 
 #import "YDOCBaseViewController+YDOCRuntime.h"
+#import "YDObject.h"
 
 @implementation YDOCBaseViewController (YDOCRuntime)
 
@@ -18,7 +19,14 @@
 }
 
 - (void)didRuntimeTypeClick:(NSString *)type {
-    
+    if ([type isEqualToString:@"消息传递"]) {
+        [self msgSendTestAction];
+    }
+}
+
+- (void)msgSendTestAction {
+    YDObject *obj = [[YDObject alloc] init];
+    [obj msgSendTest];
 }
 
 @end

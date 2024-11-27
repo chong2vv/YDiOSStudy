@@ -19,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)increase;
 
+- (void)msgSendTest;
+
 @end
 
 NS_ASSUME_NONNULL_END
