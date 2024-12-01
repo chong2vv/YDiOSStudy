@@ -10,6 +10,9 @@
 #import "Masonry.h"
 #import "YDOCBaseViewController+YDOCRuntime.h"
 #import "YDOCBaseViewController+YDOCBase.h"
+#import "YDOCBaseViewController+YDMemory.h"
+#import "YDOCBaseViewController+Block.h"
+#import "YDOCBaseViewController+YDThread.h"
 
 @interface YDOCBaseViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -37,6 +40,12 @@
         [self loadOCBaseData];
     }else if ([self.type isEqual:@"Runtime相关"]) {
         [self loadRuntimeData];
+    }else if ([self.type isEqual:@"内存管理相关"]) {
+        [self loadMemoryData];
+    }else if ([self.type isEqual:@"Block"]) {
+        [self loadBlockData];
+    }else if ([self.type isEqual:@"多线程"]) {
+        [self loadThreadData];
     }
 }
 
@@ -71,6 +80,12 @@
         [self didOCBaseTypeClick:title];
     }else if ([self.type isEqual:@"Runtime相关"]) {
         [self didRuntimeTypeClick:title];
+    }else if ([self.type isEqual:@"内存管理相关"]) {
+        [self didMemoryTypeClick:title];
+    }else if ([self.type isEqual:@"Block"]) {
+        [self didBlockTypeClick:title];
+    }else if ([self.type isEqual:@"多线程"]) {
+        [self didThreadTypeClick:title];
     }
 }
 

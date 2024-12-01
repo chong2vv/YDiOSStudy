@@ -16,10 +16,15 @@ NS_ASSUME_NONNULL_BEGIN
 //如果是copy声明则会变成不可变对象
 @property (nonatomic, copy) NSMutableArray *cMutableArray;
 @property (nonatomic, strong) NSMutableArray *bMutableArray;
+@property (nonatomic, copy) int(^blk)(int);
 
 - (void)increase;
 
 - (void)msgSendTest;
+
+- (void)blockTest;
+
+//- (void)resolveTest;
 
 @end
 

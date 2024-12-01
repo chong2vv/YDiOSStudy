@@ -23,6 +23,10 @@
 		158D96222CF5BAC100CE602F /* YDOCBaseViewController+YDOCBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D96212CF5BAC100CE602F /* YDOCBaseViewController+YDOCBase.m */; };
 		158D96262CF5BB8E00CE602F /* YDObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D96252CF5BB8E00CE602F /* YDObject.m */; };
 		158D96292CF5BBAF00CE602F /* YDObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D96282CF5BBAF00CE602F /* YDObserver.m */; };
+		158D962C2CF7357B00CE602F /* YDOCBaseViewController+YDMemory.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D962B2CF7357B00CE602F /* YDOCBaseViewController+YDMemory.m */; };
+		158D96302CF9B35B00CE602F /* NSTimer+WeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D962F2CF9B35B00CE602F /* NSTimer+WeakTimer.m */; };
+		158D96332CFB1BE100CE602F /* YDOCBaseViewController+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D96322CFB1BE100CE602F /* YDOCBaseViewController+Block.m */; };
+		158D96F42CFCA1BC00CE602F /* YDOCBaseViewController+YDThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D96F32CFCA1BC00CE602F /* YDOCBaseViewController+YDThread.m */; };
 		15911D992AD7DBC400E58958 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15911D982AD7DBC400E58958 /* AppDelegate.m */; };
 		15911D9C2AD7DBC400E58958 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15911D9B2AD7DBC400E58958 /* SceneDelegate.m */; };
 		15911D9F2AD7DBC400E58958 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15911D9E2AD7DBC400E58958 /* ViewController.m */; };
@@ -83,6 +87,14 @@
 		158D96252CF5BB8E00CE602F /* YDObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDObject.m; sourceTree = "<group>"; };
 		158D96272CF5BBAF00CE602F /* YDObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDObserver.h; sourceTree = "<group>"; };
 		158D96282CF5BBAF00CE602F /* YDObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDObserver.m; sourceTree = "<group>"; };
+		158D962A2CF7357B00CE602F /* YDOCBaseViewController+YDMemory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YDOCBaseViewController+YDMemory.h"; sourceTree = "<group>"; };
+		158D962B2CF7357B00CE602F /* YDOCBaseViewController+YDMemory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YDOCBaseViewController+YDMemory.m"; sourceTree = "<group>"; };
+		158D962E2CF9B35B00CE602F /* NSTimer+WeakTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+WeakTimer.h"; sourceTree = "<group>"; };
+		158D962F2CF9B35B00CE602F /* NSTimer+WeakTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+WeakTimer.m"; sourceTree = "<group>"; };
+		158D96312CFB1BE100CE602F /* YDOCBaseViewController+Block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YDOCBaseViewController+Block.h"; sourceTree = "<group>"; };
+		158D96322CFB1BE100CE602F /* YDOCBaseViewController+Block.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YDOCBaseViewController+Block.m"; sourceTree = "<group>"; };
+		158D96F22CFCA1BC00CE602F /* YDOCBaseViewController+YDThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YDOCBaseViewController+YDThread.h"; sourceTree = "<group>"; };
+		158D96F32CFCA1BC00CE602F /* YDOCBaseViewController+YDThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YDOCBaseViewController+YDThread.m"; sourceTree = "<group>"; };
 		15911D942AD7DBC400E58958 /* YDiOSStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YDiOSStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15911D972AD7DBC400E58958 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		15911D982AD7DBC400E58958 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -197,6 +209,12 @@
 				158D961E2CF5A58400CE602F /* YDOCBaseViewController+YDOCRuntime.m */,
 				158D96202CF5BAC100CE602F /* YDOCBaseViewController+YDOCBase.h */,
 				158D96212CF5BAC100CE602F /* YDOCBaseViewController+YDOCBase.m */,
+				158D962A2CF7357B00CE602F /* YDOCBaseViewController+YDMemory.h */,
+				158D962B2CF7357B00CE602F /* YDOCBaseViewController+YDMemory.m */,
+				158D96312CFB1BE100CE602F /* YDOCBaseViewController+Block.h */,
+				158D96322CFB1BE100CE602F /* YDOCBaseViewController+Block.m */,
+				158D96F22CFCA1BC00CE602F /* YDOCBaseViewController+YDThread.h */,
+				158D96F32CFCA1BC00CE602F /* YDOCBaseViewController+YDThread.m */,
 			);
 			path = Study;
 			sourceTree = "<group>";
@@ -210,6 +228,15 @@
 				158D96282CF5BBAF00CE602F /* YDObserver.m */,
 			);
 			path = Mock;
+			sourceTree = "<group>";
+		};
+		158D962D2CF9B34800CE602F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				158D962E2CF9B35B00CE602F /* NSTimer+WeakTimer.h */,
+				158D962F2CF9B35B00CE602F /* NSTimer+WeakTimer.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		15911D8B2AD7DBC400E58958 = {
@@ -275,6 +302,7 @@
 		15911DCC2AD7DBF600E58958 /* YDStudyObjC */ = {
 			isa = PBXGroup;
 			children = (
+				158D962D2CF9B34800CE602F /* Tools */,
 				158D96232CF5BB7000CE602F /* Mock */,
 				158D96192CF5A39500CE602F /* Study */,
 				158D96152CF4E28E00CE602F /* UI */,
@@ -517,6 +545,7 @@
 			files = (
 				150B81A12C85B36600844841 /* NSObject+YD.swift in Sources */,
 				150B819C2C85B1D600844841 /* SwiftListViewController.swift in Sources */,
+				158D962C2CF7357B00CE602F /* YDOCBaseViewController+YDMemory.m in Sources */,
 				158D96222CF5BAC100CE602F /* YDOCBaseViewController+YDOCBase.m in Sources */,
 				15911D9F2AD7DBC400E58958 /* ViewController.m in Sources */,
 				158D96292CF5BBAF00CE602F /* YDObserver.m in Sources */,
@@ -526,8 +555,10 @@
 				15911DD02AD7DC7C00E58958 /* Boy.m in Sources */,
 				15B875C62AEA51CD00F3476B /* DyldBuild.m in Sources */,
 				158D961C2CF5A3B600CE602F /* YDOCBaseViewController.m in Sources */,
+				158D96302CF9B35B00CE602F /* NSTimer+WeakTimer.m in Sources */,
 				158D96262CF5BB8E00CE602F /* YDObject.m in Sources */,
 				15911DD92AD8D8C900E58958 /* SayHi.m in Sources */,
+				158D96F42CFCA1BC00CE602F /* YDOCBaseViewController+YDThread.m in Sources */,
 				150B819E2C85B2E000844841 /* UITableViewCell+YD.swift in Sources */,
 				150B81982C85AF4600844841 /* SwiftFunction.swift in Sources */,
 				15911DD42AD7F95B00E58958 /* StudyObjC.m in Sources */,
@@ -538,6 +569,7 @@
 				15911DAA2AD7DBC500E58958 /* main.m in Sources */,
 				150B81AE2C88060B00844841 /* UnitTest.swift in Sources */,
 				15911D9C2AD7DBC400E58958 /* SceneDelegate.m in Sources */,
+				158D96332CFB1BE100CE602F /* YDOCBaseViewController+Block.m in Sources */,
 				150B81A52C85B87100844841 /* SwiftBaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
