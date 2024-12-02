@@ -29,7 +29,9 @@ void printNumbers(void *param) {
     self.data = @[
         @"信号量",
         @"同步串行",
-        @"同步并发"
+        @"同步并发",
+        @"异步串行",
+        @"异步并发"
     ];
 }
 
@@ -38,7 +40,27 @@ void printNumbers(void *param) {
         [self semaphoreAction];
     }else if ([type isEqualToString:@"同步串行"]) {
         [self syncMainQueue];
+    }else if ([type isEqualToString:@"同步并发"]) {
+        [self syncGlobalQueue];
+    }else if ([type isEqualToString:@"异步串行"]) {
+        [self asyncMainQueue];
+    }else if ([type isEqualToString:@"异步并发"]) {
+        [self asyncGlobalQueue];
     }
+}
+
+- (void)asyncGlobalQueue {
+    dispatch_queue_t mainQueue = dispatch_get_main_queue();
+    dispatch_queue_t globalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_queue_t otherQueue = dispatch_queue_create(@"com.xxxx.thread", DISPATCH_QUEUE_SERIAL_INACTIVE);
+    dispatch_async(globalQueue, ^{
+        NSLog(@"1");
+//        [self performSelector:@selector(doSomething) withObject:nil afterDelay:0];
+        dispatch_async(otherQueue, ^{
+            NSLog(@"2");
+        });
+        NSLog(@"3");
+    });
 }
 
 - (void)syncGlobalQueue {
@@ -49,7 +71,9 @@ void printNumbers(void *param) {
         dispatch_sync(global, ^{
             NSLog(@"3");
         });
+        NSLog(@"4");
     });
+    NSLog(@"5");
 }
 
 - (void)syncMainQueue {
@@ -58,8 +82,14 @@ void printNumbers(void *param) {
     });
 }
 
+- (void)asyncMainQueue {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self doSomething];
+    });
+}
+
 - (void)doSomething {
-    NSLog(@"xxxxxx");
+    NSLog(@"2");
 }
 
 - (void)semaphoreAction {
