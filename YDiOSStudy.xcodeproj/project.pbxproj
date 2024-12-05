@@ -28,6 +28,11 @@
 		158D96332CFB1BE100CE602F /* YDOCBaseViewController+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D96322CFB1BE100CE602F /* YDOCBaseViewController+Block.m */; };
 		158D96F42CFCA1BC00CE602F /* YDOCBaseViewController+YDThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D96F32CFCA1BC00CE602F /* YDOCBaseViewController+YDThread.m */; };
 		158D96F72CFDA99B00CE602F /* YDUserCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D96F62CFDA99B00CE602F /* YDUserCenter.m */; };
+		158D96FE2D01FA7300CE602F /* YDOCBaseViewController+YDDesign.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D96FD2D01FA7300CE602F /* YDOCBaseViewController+YDDesign.m */; };
+		158D97012D01FB5100CE602F /* YDBusinessObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D97002D01FB5100CE602F /* YDBusinessObject.m */; };
+		158D97042D02035300CE602F /* YDBusinessObjectA.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D97032D02035300CE602F /* YDBusinessObjectA.m */; };
+		158D97072D02035C00CE602F /* YDBusinessObjectB.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D97062D02035C00CE602F /* YDBusinessObjectB.m */; };
+		158D970A2D02036400CE602F /* YDBusinessObjectC.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D97092D02036400CE602F /* YDBusinessObjectC.m */; };
 		15911D992AD7DBC400E58958 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15911D982AD7DBC400E58958 /* AppDelegate.m */; };
 		15911D9C2AD7DBC400E58958 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15911D9B2AD7DBC400E58958 /* SceneDelegate.m */; };
 		15911D9F2AD7DBC400E58958 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15911D9E2AD7DBC400E58958 /* ViewController.m */; };
@@ -98,6 +103,16 @@
 		158D96F32CFCA1BC00CE602F /* YDOCBaseViewController+YDThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YDOCBaseViewController+YDThread.m"; sourceTree = "<group>"; };
 		158D96F52CFDA99B00CE602F /* YDUserCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDUserCenter.h; sourceTree = "<group>"; };
 		158D96F62CFDA99B00CE602F /* YDUserCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDUserCenter.m; sourceTree = "<group>"; };
+		158D96FC2D01FA7300CE602F /* YDOCBaseViewController+YDDesign.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YDOCBaseViewController+YDDesign.h"; sourceTree = "<group>"; };
+		158D96FD2D01FA7300CE602F /* YDOCBaseViewController+YDDesign.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YDOCBaseViewController+YDDesign.m"; sourceTree = "<group>"; };
+		158D96FF2D01FB5100CE602F /* YDBusinessObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDBusinessObject.h; sourceTree = "<group>"; };
+		158D97002D01FB5100CE602F /* YDBusinessObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDBusinessObject.m; sourceTree = "<group>"; };
+		158D97022D02035300CE602F /* YDBusinessObjectA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDBusinessObjectA.h; sourceTree = "<group>"; };
+		158D97032D02035300CE602F /* YDBusinessObjectA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDBusinessObjectA.m; sourceTree = "<group>"; };
+		158D97052D02035C00CE602F /* YDBusinessObjectB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDBusinessObjectB.h; sourceTree = "<group>"; };
+		158D97062D02035C00CE602F /* YDBusinessObjectB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDBusinessObjectB.m; sourceTree = "<group>"; };
+		158D97082D02036400CE602F /* YDBusinessObjectC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDBusinessObjectC.h; sourceTree = "<group>"; };
+		158D97092D02036400CE602F /* YDBusinessObjectC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDBusinessObjectC.m; sourceTree = "<group>"; };
 		15911D942AD7DBC400E58958 /* YDiOSStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YDiOSStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15911D972AD7DBC400E58958 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		15911D982AD7DBC400E58958 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -218,6 +233,8 @@
 				158D96322CFB1BE100CE602F /* YDOCBaseViewController+Block.m */,
 				158D96F22CFCA1BC00CE602F /* YDOCBaseViewController+YDThread.h */,
 				158D96F32CFCA1BC00CE602F /* YDOCBaseViewController+YDThread.m */,
+				158D96FC2D01FA7300CE602F /* YDOCBaseViewController+YDDesign.h */,
+				158D96FD2D01FA7300CE602F /* YDOCBaseViewController+YDDesign.m */,
 			);
 			path = Study;
 			sourceTree = "<group>";
@@ -231,6 +248,14 @@
 				158D96282CF5BBAF00CE602F /* YDObserver.m */,
 				158D96F52CFDA99B00CE602F /* YDUserCenter.h */,
 				158D96F62CFDA99B00CE602F /* YDUserCenter.m */,
+				158D96FF2D01FB5100CE602F /* YDBusinessObject.h */,
+				158D97002D01FB5100CE602F /* YDBusinessObject.m */,
+				158D97022D02035300CE602F /* YDBusinessObjectA.h */,
+				158D97032D02035300CE602F /* YDBusinessObjectA.m */,
+				158D97052D02035C00CE602F /* YDBusinessObjectB.h */,
+				158D97062D02035C00CE602F /* YDBusinessObjectB.m */,
+				158D97082D02036400CE602F /* YDBusinessObjectC.h */,
+				158D97092D02036400CE602F /* YDBusinessObjectC.m */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -551,6 +576,7 @@
 				150B81A12C85B36600844841 /* NSObject+YD.swift in Sources */,
 				150B819C2C85B1D600844841 /* SwiftListViewController.swift in Sources */,
 				158D962C2CF7357B00CE602F /* YDOCBaseViewController+YDMemory.m in Sources */,
+				158D96FE2D01FA7300CE602F /* YDOCBaseViewController+YDDesign.m in Sources */,
 				158D96222CF5BAC100CE602F /* YDOCBaseViewController+YDOCBase.m in Sources */,
 				158D96F72CFDA99B00CE602F /* YDUserCenter.m in Sources */,
 				15911D9F2AD7DBC400E58958 /* ViewController.m in Sources */,
@@ -562,13 +588,17 @@
 				15B875C62AEA51CD00F3476B /* DyldBuild.m in Sources */,
 				158D961C2CF5A3B600CE602F /* YDOCBaseViewController.m in Sources */,
 				158D96302CF9B35B00CE602F /* NSTimer+WeakTimer.m in Sources */,
+				158D97042D02035300CE602F /* YDBusinessObjectA.m in Sources */,
 				158D96262CF5BB8E00CE602F /* YDObject.m in Sources */,
+				158D97072D02035C00CE602F /* YDBusinessObjectB.m in Sources */,
 				15911DD92AD8D8C900E58958 /* SayHi.m in Sources */,
 				158D96F42CFCA1BC00CE602F /* YDOCBaseViewController+YDThread.m in Sources */,
 				150B819E2C85B2E000844841 /* UITableViewCell+YD.swift in Sources */,
 				150B81982C85AF4600844841 /* SwiftFunction.swift in Sources */,
 				15911DD42AD7F95B00E58958 /* StudyObjC.m in Sources */,
 				150B81A32C85B67A00844841 /* SwiftErrorViewController.swift in Sources */,
+				158D97012D01FB5100CE602F /* YDBusinessObject.m in Sources */,
+				158D970A2D02036400CE602F /* YDBusinessObjectC.m in Sources */,
 				150B811E2C7F350B00844841 /* NumberIterator.swift in Sources */,
 				158D96182CF4E2C000CE602F /* YDOCListViewController.m in Sources */,
 				158D961F2CF5A58400CE602F /* YDOCBaseViewController+YDOCRuntime.m in Sources */,

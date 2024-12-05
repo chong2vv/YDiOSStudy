@@ -13,6 +13,7 @@
 #import "YDOCBaseViewController+YDMemory.h"
 #import "YDOCBaseViewController+Block.h"
 #import "YDOCBaseViewController+YDThread.h"
+#import "YDOCBaseViewController+YDDesign.h"
 
 @interface YDOCBaseViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -46,6 +47,8 @@
         [self loadBlockData];
     }else if ([self.type isEqual:@"多线程"]) {
         [self loadThreadData];
+    }else if ([self.type isEqual:@"设计模式"]) {
+        [self loadDesignData];
     }
 }
 
@@ -86,6 +89,8 @@
         [self didBlockTypeClick:title];
     }else if ([self.type isEqual:@"多线程"]) {
         [self didThreadTypeClick:title];
+    }else if ([self.type isEqual:@"设计模式"]) {
+        [self didDesignTypeClick:title];
     }
 }
 
