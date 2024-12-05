@@ -11,6 +11,44 @@
 
 @implementation YDObject
 
+static NSThread *thread = nil;
+static BOOL runAlaways = YES;
+
++ (NSThread *)threadForDispatch {
+    if (thread == nil) {
+        @synchronized (self) {
+            if (thread == nil) {
+                // 线程的创建
+                thread = [[NSThread alloc] initWithTarget:self selector:@selector(runRequest) object:nil];
+                [thread setName:@"com.yd.thread"];
+                // 启动
+                [thread start];
+            }
+        }
+    }
+    return thread;
+}
+
+- (void)runRequest {
+    CFRunLoopSourceContext context = {0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL};
+    CFRunLoopSourceRef source = CFRunLoopSourceCreate(kCFAllocatorDefault, 0, &context);
+    // 创建RunLoop，同时向RunLoop的defaultMode下添加source
+    CFRunLoopAddSource(CFRunLoopGetCurrent(), source, kCFRunLoopDefaultMode);
+    // 如果可以运行
+    while (runAlaways) {
+        @autoreleasepool {
+            // 令当前RunLoop运行在DefaultMode下面
+            CFRunLoopRunInMode(kCFRunLoopDefaultMode, 1.0e10, true);
+        }
+    }
+    
+    // 某一时机 静态变量runAlaways = NO 可以保证跳出RunLoop，线程退出
+    CFRunLoopRemoveSource(CFRunLoopGetCurrent(), source, kCFRunLoopDefaultMode);
+    CFRelease(source);
+    
+}
+
+
 // 方法执行体
 void testImp(void) {
     NSLog(@"test invoke");

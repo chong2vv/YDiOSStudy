@@ -7,6 +7,7 @@
 
 #import "YDOCBaseViewController+YDThread.h"
 #import <dispatch/dispatch.h>
+#import "YDUserCenter.h"
 
 dispatch_semaphore_t semaphore;
 
@@ -31,7 +32,9 @@ void printNumbers(void *param) {
         @"同步串行",
         @"同步并发",
         @"异步串行",
-        @"异步并发"
+        @"异步并发",
+        @"barrier",
+        @"Test"
     ];
 }
 
@@ -46,21 +49,71 @@ void printNumbers(void *param) {
         [self asyncMainQueue];
     }else if ([type isEqualToString:@"异步并发"]) {
         [self asyncGlobalQueue];
+    }else if ([type isEqualToString:@"barrier"]) {
+        
+    }else if ([type isEqualToString:@"Test"]) {
+        [self test];
     }
 }
 
+- (void)test {
+    self.mainQueue = dispatch_get_main_queue();
+    self.globalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    if (!self.otherQueue) {
+        self.otherQueue = dispatch_queue_create("com.xxxx.thread", DISPATCH_QUEUE_SERIAL);
+    }
+    
+    dispatch_async(self.otherQueue, ^{
+        [self funcA];
+        NSLog(@"%@", [NSThread currentThread]);
+    });
+    dispatch_async(self.otherQueue, ^{
+        [self funcB];
+        NSLog(@"%@", [NSThread currentThread]);
+    });
+    dispatch_async(self.otherQueue, ^{
+        [self funcC];
+        NSLog(@"%@", [NSThread currentThread]);
+    });
+    NSLog(@"====== hhhhh ======");
+    NSLog(@"%@", [NSThread currentThread]);
+}
+
+- (void) funcA {
+    NSLog(@"A");
+}
+
+- (void) funcB {
+    NSLog(@"B");
+}
+
+- (void) funcC {
+    NSLog(@"C");
+}
+
+- (void) funcD {
+    NSLog(@"D");
+}
+
 - (void)asyncGlobalQueue {
-    dispatch_queue_t mainQueue = dispatch_get_main_queue();
-    dispatch_queue_t globalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    dispatch_queue_t otherQueue = dispatch_queue_create(@"com.xxxx.thread", DISPATCH_QUEUE_SERIAL_INACTIVE);
-    dispatch_async(globalQueue, ^{
+    self.mainQueue = dispatch_get_main_queue();
+    self.globalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    if (!self.otherQueue) {
+        self.otherQueue = dispatch_queue_create("com.xxxx.thread", DISPATCH_QUEUE_SERIAL);
+    }
+//    self.otherQueue = dispatch_queue_create("com.xxxx.thread", DISPATCH_QUEUE_SERIAL);
+    dispatch_sync(self.globalQueue, ^{
         NSLog(@"1");
 //        [self performSelector:@selector(doSomething) withObject:nil afterDelay:0];
-        dispatch_async(otherQueue, ^{
+        dispatch_sync(self.globalQueue, ^{
             NSLog(@"2");
         });
         NSLog(@"3");
     });
+}
+
+- (void)barrierAction {
+    YDUserCenter *userCenter = [[YDUserCenter alloc] init];
 }
 
 - (void)syncGlobalQueue {
@@ -77,14 +130,28 @@ void printNumbers(void *param) {
 }
 
 - (void)syncMainQueue {
-    dispatch_sync(dispatch_get_main_queue(), ^{
+    if (!self.otherQueue) {
+        self.otherQueue = dispatch_queue_create("com.xxxx.thread", DISPATCH_QUEUE_SERIAL);
+    }
+    self.globalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_sync(self.otherQueue, ^{
         [self doSomething];
     });
 }
 
 - (void)asyncMainQueue {
+    if (!self.otherQueue) {
+        self.otherQueue = dispatch_queue_create("com.xxxx.thread", DISPATCH_QUEUE_SERIAL);
+    }
+    self.globalQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_async(dispatch_get_main_queue(), ^{
-        [self doSomething];
+        NSLog(@"1111");
+        dispatch_sync(self.otherQueue, ^{
+            NSLog(@"2222");
+            sleep(3);
+        });
+        sleep(3);
+        NSLog(@"3333");
     });
 }
 

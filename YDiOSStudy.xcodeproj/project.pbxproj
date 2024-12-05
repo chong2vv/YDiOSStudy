@@ -27,6 +27,7 @@
 		158D96302CF9B35B00CE602F /* NSTimer+WeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D962F2CF9B35B00CE602F /* NSTimer+WeakTimer.m */; };
 		158D96332CFB1BE100CE602F /* YDOCBaseViewController+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D96322CFB1BE100CE602F /* YDOCBaseViewController+Block.m */; };
 		158D96F42CFCA1BC00CE602F /* YDOCBaseViewController+YDThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D96F32CFCA1BC00CE602F /* YDOCBaseViewController+YDThread.m */; };
+		158D96F72CFDA99B00CE602F /* YDUserCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D96F62CFDA99B00CE602F /* YDUserCenter.m */; };
 		15911D992AD7DBC400E58958 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15911D982AD7DBC400E58958 /* AppDelegate.m */; };
 		15911D9C2AD7DBC400E58958 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15911D9B2AD7DBC400E58958 /* SceneDelegate.m */; };
 		15911D9F2AD7DBC400E58958 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15911D9E2AD7DBC400E58958 /* ViewController.m */; };
@@ -95,6 +96,8 @@
 		158D96322CFB1BE100CE602F /* YDOCBaseViewController+Block.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YDOCBaseViewController+Block.m"; sourceTree = "<group>"; };
 		158D96F22CFCA1BC00CE602F /* YDOCBaseViewController+YDThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YDOCBaseViewController+YDThread.h"; sourceTree = "<group>"; };
 		158D96F32CFCA1BC00CE602F /* YDOCBaseViewController+YDThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YDOCBaseViewController+YDThread.m"; sourceTree = "<group>"; };
+		158D96F52CFDA99B00CE602F /* YDUserCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDUserCenter.h; sourceTree = "<group>"; };
+		158D96F62CFDA99B00CE602F /* YDUserCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDUserCenter.m; sourceTree = "<group>"; };
 		15911D942AD7DBC400E58958 /* YDiOSStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YDiOSStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15911D972AD7DBC400E58958 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		15911D982AD7DBC400E58958 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -226,6 +229,8 @@
 				158D96252CF5BB8E00CE602F /* YDObject.m */,
 				158D96272CF5BBAF00CE602F /* YDObserver.h */,
 				158D96282CF5BBAF00CE602F /* YDObserver.m */,
+				158D96F52CFDA99B00CE602F /* YDUserCenter.h */,
+				158D96F62CFDA99B00CE602F /* YDUserCenter.m */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -547,6 +552,7 @@
 				150B819C2C85B1D600844841 /* SwiftListViewController.swift in Sources */,
 				158D962C2CF7357B00CE602F /* YDOCBaseViewController+YDMemory.m in Sources */,
 				158D96222CF5BAC100CE602F /* YDOCBaseViewController+YDOCBase.m in Sources */,
+				158D96F72CFDA99B00CE602F /* YDUserCenter.m in Sources */,
 				15911D9F2AD7DBC400E58958 /* ViewController.m in Sources */,
 				158D96292CF5BBAF00CE602F /* YDObserver.m in Sources */,
 				15911D992AD7DBC400E58958 /* AppDelegate.m in Sources */,
